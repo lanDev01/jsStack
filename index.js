@@ -1,15 +1,12 @@
-function myFunction() {
-    // functions tem o seu proprio this
-    this.name = 'Alan'
-
-    const myArrowFunction = () => {
-        this.lastName = 'Alan'
-    };
-
-    myArrowFunction()
-    // arrow functions herda o this de onde foi criada
+function sum(...arg) {
+    // function tem seu proprio argument e seu proprio objeto this
+    console.log(arg);    
 };
 
-console.log(new myFunction())
+const sumArrow = () => {
+    // arrow function herda o this e o argument
+    console.log(arguments);    
+};
 
-console.log(this)
+sum(1, 2, 3, 4, 5, 6, 7, 8, 9)
+sumArrow(1, 2, 3, 4, 5, 6, 7, 8, 9)
