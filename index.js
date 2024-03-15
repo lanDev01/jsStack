@@ -1,13 +1,19 @@
-function sum(...arg) {
-    // function tem seu proprio argument e seu proprio objeto this
-    console.log(arg);    
-};
+// Short syntax
 
-const sumArrow = () => {
-    // arrow function herda o this e o argument de onde ela foi criada
-    
-    console.log(arguments);    
-};
+// const num = 10;
+// const sum = () => (
+//         num >= 10 
+//             ? 'Maior igual a 10' 
+//             : 'Menor que 10'
+//     );
 
-sum(1, 2, 3, 4, 5, 6, 7, 8, 9)
-sumArrow(1, 2, 3, 4, 5, 6, 7, 8, 9)
+// console.log(sum())
+
+const num = 10;
+
+const getUser = () => ({
+    id: '123',
+    name: 'Alan'
+})
+
+console.log(getUser())
