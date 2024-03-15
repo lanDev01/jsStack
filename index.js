@@ -4,7 +4,8 @@ function sum(...arg) {
 };
 
 const sumArrow = () => {
-    // arrow function herda o this e o argument
+    // arrow function herda o this e o argument de onde ela foi criada
+    
     console.log(arguments);    
 };
 
